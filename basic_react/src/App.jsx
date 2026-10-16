@@ -185,17 +185,7 @@ const App=() =>{
 <button onClick={handlesubmit}>Submit</button>
      
     <div className='container'>
-      <div className='greet'>  <fieldset>    
-         {submitted && (
-        <>
-          <legend><h3><label>{form.Name}</label></h3></legend>
-          <br />
-          <label><h3>Email:</h3> <p>{form.email}</p></label>
-          <br />
-          {/* <label>Age: {form.age}</label> */}
-        </>)}
-        </fieldset>
-        </div>
+      
       {data?.map((item,key)=>{
         return(
           
@@ -223,6 +213,17 @@ const App=() =>{
           )
       })}
     </div>
+    <div className='greet'>  <fieldset>    
+         {submitted && (
+        <>
+          <legend><h3><label>{form.Name}</label></h3></legend>
+          <br />
+          <label><h3>Email:</h3> <p>{form.email}</p></label>
+          <br />
+          {/* <label>Age: {form.age}</label> */}
+        </>)}
+        </fieldset>
+        </div>
     </div>
   )
   
